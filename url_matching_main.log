@@ -1,0 +1,423 @@
+2024-08-14 12:35:12,853 - INFO - Processing matched output for operation: ./match_tables/crm_cb_matched.csv
+2024-08-14 12:35:13,027 - INFO - Read ./match_tables/crm_cb_matched.csv successfully. Shape: (27979, 6)
+2024-08-14 12:35:13,037 - INFO - Checking for duplicates in column: cb_company
+2024-08-14 12:35:13,062 - INFO - Found 3432 duplicate rows based on cb_company
+2024-08-14 12:35:13,062 - INFO - Remaining non-duplicate rows: 24547
+2024-08-14 12:35:13,113 - INFO - Saved duplicate rows to ./match_tables\crm_cb_duplicate_matched.csv
+2024-08-14 12:35:13,243 - INFO - Saved non-duplicate rows back to ./match_tables/crm_cb_matched.csv
+2024-08-14 13:02:51,372 - INFO - Starting CRM to Crunchbase Company URL Matching
+2024-08-14 13:02:51,372 - ERROR - Error in CRM to Crunchbase Company URL Matching: process() got an unexpected keyword argument 'name'
+2024-08-14 13:02:51,388 - INFO - Starting CRM to Sourcescrub Company URL Matching
+2024-08-14 13:02:51,388 - ERROR - Error in CRM to Sourcescrub Company URL Matching: process() got an unexpected keyword argument 'name'
+2024-08-14 13:02:51,388 - INFO - Starting Crunchbase to Sourcescrub Company URL Matching
+2024-08-14 13:02:51,388 - ERROR - Error in Crunchbase to Sourcescrub Company URL Matching: process() got an unexpected keyword argument 'name'
+2024-08-14 13:02:51,388 - INFO - Starting CRM to Brightdata Company Website URL Matching
+2024-08-14 13:02:51,388 - ERROR - Error in CRM to Brightdata Company Website URL Matching: process() got an unexpected keyword argument 'name'
+2024-08-14 13:02:51,388 - INFO - Starting CRM to Brightdata Linkedin Company URL Matching
+2024-08-14 13:02:51,388 - ERROR - Error in CRM to Brightdata Linkedin Company URL Matching: process() got an unexpected keyword argument 'name'
+2024-08-14 13:02:51,388 - INFO - Starting CRM to Brightdata Linkedin People URL Matching
+2024-08-14 13:02:51,388 - INFO - Generating input for Brightdata LinkedIn company URL matching
+2024-08-14 13:02:53,657 - INFO - Generated input files for LinkedIn company URL matching
+2024-08-14 13:02:53,676 - ERROR - Error in CRM to Brightdata Linkedin People URL Matching: process() got an unexpected keyword argument 'name'
+2024-08-14 13:02:53,676 - INFO - Processing matched output for operation: ./match_tables/crm_cb_matched.csv
+2024-08-14 13:02:53,760 - INFO - Read ./match_tables/crm_cb_matched.csv successfully. Shape: (24547, 6)
+2024-08-14 13:02:53,760 - INFO - Checking for duplicates in column: cb_company
+2024-08-14 13:02:53,767 - INFO - Found 0 duplicate rows based on cb_company
+2024-08-14 13:02:53,768 - INFO - Remaining non-duplicate rows: 24547
+2024-08-14 13:02:53,774 - INFO - Saved duplicate rows to ./match_tables\crm_cb_duplicate_matched.csv
+2024-08-14 13:02:53,891 - INFO - Saved non-duplicate rows back to ./match_tables/crm_cb_matched.csv
+2024-08-14 13:02:53,891 - INFO - Processing matched output for operation: ./match_tables/crm_ss_matched.csv
+2024-08-14 13:02:53,971 - INFO - Read ./match_tables/crm_ss_matched.csv successfully. Shape: (26695, 6)
+2024-08-14 13:02:53,971 - INFO - Checking for duplicates in column: ss_company
+2024-08-14 13:02:53,980 - INFO - Found 1453 duplicate rows based on ss_company
+2024-08-14 13:02:53,981 - INFO - Remaining non-duplicate rows: 25242
+2024-08-14 13:02:53,990 - INFO - Saved duplicate rows to ./match_tables\crm_ss_duplicate_matched.csv
+2024-08-14 13:02:54,103 - INFO - Saved non-duplicate rows back to ./match_tables/crm_ss_matched.csv
+2024-08-14 13:02:54,103 - INFO - Processing matched output for operation: ./match_tables/cb_ss_matched.csv
+2024-08-14 13:02:59,692 - INFO - Read ./match_tables/cb_ss_matched.csv successfully. Shape: (2286022, 6)
+2024-08-14 13:02:59,692 - INFO - Checking for duplicates in column: ss_company
+2024-08-14 13:03:00,560 - INFO - Found 914656 duplicate rows based on ss_company
+2024-08-14 13:03:00,560 - INFO - Remaining non-duplicate rows: 1371366
+2024-08-14 13:03:05,722 - INFO - Saved duplicate rows to ./match_tables\cb_ss_duplicate_matched.csv
+2024-08-14 13:05:27,372 - INFO - Starting CRM to Crunchbase Company URL Matching
+2024-08-14 13:05:27,372 - ERROR - Error in CRM to Crunchbase Company URL Matching: process() got an unexpected keyword argument 'com pany_col2'
+2024-08-14 13:05:27,372 - INFO - Starting CRM to Sourcescrub Company URL Matching
+2024-08-14 13:05:27,470 - INFO - Loaded DataFrame from ./input_data/VW_SF_CRM_MATCH.csv. Initial shape: (27052, 4)
+2024-08-14 13:05:27,474 - INFO - Renamed columns: {'ID': 'CRM_ID'}
+2024-08-14 13:05:27,483 - WARNING - Dropped 8 rows with null values in CRM_ID or COMPANY_WEBSITE
+2024-08-14 13:05:27,484 - INFO - Shape after removing null values: (27044, 4)
+2024-08-14 13:05:29,556 - INFO - Loaded DataFrame from ./input_data/VW_SS_COMPANY_MATCH.csv. Initial shape: (3165207, 2)
+2024-08-14 13:05:29,857 - WARNING - Dropped 33864 rows with null values in ID or WEBSITE
+2024-08-14 13:05:29,857 - INFO - Shape after removing null values: (3131343, 2)
+2024-08-14 13:05:30,151 - INFO - Preprocessed URLs and extracted company names into 'crm_company' column
+2024-08-14 13:07:12,483 - INFO - Starting CRM to Crunchbase Company URL Matching
+2024-08-14 13:07:12,567 - INFO - Loaded DataFrame from ./input_data/VW_SF_CRM_MATCH.csv. Initial shape: (27052, 4)
+2024-08-14 13:07:12,567 - INFO - Renamed columns: {'ID': 'CRM_ID'}
+2024-08-14 13:07:12,567 - WARNING - Dropped 8 rows with null values in CRM_ID or COMPANY_WEBSITE
+2024-08-14 13:07:12,567 - INFO - Shape after removing null values: (27044, 4)
+2024-08-14 13:07:17,939 - INFO - Loaded DataFrame from ./input_data/VW_CB_MATCH.csv. Initial shape: (3542011, 2)
+2024-08-14 13:07:18,552 - WARNING - Dropped 111941 rows with null values in UUID or HOMEPAGE_URL
+2024-08-14 13:07:18,552 - INFO - Shape after removing null values: (3430070, 2)
+2024-08-14 13:07:18,855 - INFO - Preprocessed URLs and extracted company names into 'crm_company' column
+2024-08-14 13:07:54,390 - INFO - Preprocessed URLs and extracted company names into 'cb_company' column
+2024-08-14 13:07:59,138 - INFO - Matched 27979 companies between the two DataFrames
+2024-08-14 13:07:59,405 - INFO - Saved matched results to ./match_tables/crm_cb_matched.csv
+2024-08-14 13:07:59,405 - INFO - Saved unmatched results to ./unmatch_tables/crm_cb_unmatched.csv
+2024-08-14 13:07:59,822 - INFO - Completed CRM to Crunchbase Company URL Matching
+2024-08-14 13:07:59,822 - INFO - Starting CRM to Sourcescrub Company URL Matching
+2024-08-14 13:07:59,890 - INFO - Loaded DataFrame from ./input_data/VW_SF_CRM_MATCH.csv. Initial shape: (27052, 4)
+2024-08-14 13:07:59,904 - INFO - Renamed columns: {'ID': 'CRM_ID'}
+2024-08-14 13:07:59,910 - WARNING - Dropped 8 rows with null values in CRM_ID or COMPANY_WEBSITE
+2024-08-14 13:07:59,911 - INFO - Shape after removing null values: (27044, 4)
+2024-08-14 13:08:02,338 - INFO - Loaded DataFrame from ./input_data/VW_SS_COMPANY_MATCH.csv. Initial shape: (3165207, 2)
+2024-08-14 13:08:02,640 - WARNING - Dropped 33864 rows with null values in ID or WEBSITE
+2024-08-14 13:08:02,640 - INFO - Shape after removing null values: (3131343, 2)
+2024-08-14 13:08:02,872 - INFO - Preprocessed URLs and extracted company names into 'crm_company' column
+2024-08-14 13:08:34,208 - INFO - Preprocessed URLs and extracted company names into 'ss_company' column
+2024-08-14 13:08:36,624 - INFO - Matched 26695 companies between the two DataFrames
+2024-08-14 13:08:36,845 - INFO - Saved matched results to ./match_tables/crm_ss_matched.csv
+2024-08-14 13:08:36,845 - INFO - Saved unmatched results to ./unmatch_tables/crm_ss_unmatched.csv
+2024-08-14 13:08:36,980 - INFO - Completed CRM to Sourcescrub Company URL Matching
+2024-08-14 13:08:36,981 - INFO - Starting Crunchbase to Sourcescrub Company URL Matching
+2024-08-14 13:08:41,730 - INFO - Loaded DataFrame from ./input_data/VW_CB_MATCH.csv. Initial shape: (3542011, 2)
+2024-08-14 13:08:41,731 - INFO - Renamed columns: {'ID': 'CRM_ID'}
+2024-08-14 13:08:42,343 - WARNING - Dropped 111941 rows with null values in UUID or HOMEPAGE_URL
+2024-08-14 13:08:42,345 - INFO - Shape after removing null values: (3430070, 2)
+2024-08-14 13:08:45,010 - INFO - Loaded DataFrame from ./input_data/VW_SS_COMPANY_MATCH.csv. Initial shape: (3165207, 2)
+2024-08-14 13:08:45,442 - WARNING - Dropped 33864 rows with null values in ID or WEBSITE
+2024-08-14 13:08:45,442 - INFO - Shape after removing null values: (3131343, 2)
+2024-08-14 13:09:21,663 - INFO - Preprocessed URLs and extracted company names into 'cb_company' column
+2024-08-14 13:10:00,359 - INFO - Preprocessed URLs and extracted company names into 'ss_company' column
+2024-08-14 13:10:19,401 - INFO - Matched 2286022 companies between the two DataFrames
+2024-08-14 13:10:44,343 - INFO - Saved matched results to ./match_tables/cb_ss_matched.csv
+2024-08-14 13:10:44,343 - INFO - Saved unmatched results to ./unmatch_tables/cb_ss_unmatched.csv
+2024-08-14 13:10:45,472 - INFO - Completed Crunchbase to Sourcescrub Company URL Matching
+2024-08-14 13:10:45,472 - INFO - Starting CRM to Brightdata Company Website URL Matching
+2024-08-14 13:10:45,571 - INFO - Loaded DataFrame from ./input_data/VW_SF_CRM_MATCH.csv. Initial shape: (27052, 4)
+2024-08-14 13:10:45,586 - INFO - Renamed columns: {'ID': 'CRM_ID'}
+2024-08-14 13:10:45,587 - WARNING - Dropped 8 rows with null values in CRM_ID or COMPANY_WEBSITE
+2024-08-14 13:10:45,587 - INFO - Shape after removing null values: (27044, 4)
+2024-08-14 13:10:45,896 - INFO - Loaded DataFrame from ./input_data/VW_BD_COMPANY_MATCH.csv. Initial shape: (73483, 4)
+2024-08-14 13:10:45,896 - INFO - Renamed columns: {'COMPANY_WEBSITE': 'WEBSITE'}
+2024-08-14 13:10:45,912 - INFO - Shape after removing null values: (73483, 4)
+2024-08-14 13:10:46,272 - INFO - Preprocessed URLs and extracted company names into 'crm_company' column
+2024-08-14 13:10:47,324 - INFO - Preprocessed URLs and extracted company names into 'bd_company' column
+2024-08-14 13:10:47,460 - INFO - Matched 18958 companies between the two DataFrames
+2024-08-14 13:10:47,661 - INFO - Saved matched results to ./match_tables/crm_bd_comp_matched.csv
+2024-08-14 13:10:47,661 - INFO - Saved unmatched results to ./unmatch_tables/crm_bd_comp_unmatched.csv
+2024-08-14 13:10:47,678 - INFO - Completed CRM to Brightdata Company Website URL Matching
+2024-08-14 13:10:47,678 - INFO - Starting CRM to Brightdata Linkedin Company URL Matching
+2024-08-14 13:10:47,717 - INFO - Loaded DataFrame from ./input_data/linkedin_crm_comp.csv. Initial shape: (8550, 4)
+2024-08-14 13:10:47,717 - INFO - Renamed columns: {'ID': 'CRM_ID'}
+2024-08-14 13:10:47,732 - WARNING - Dropped 1813 rows with null values in CRM_ID or LINKEDIN_URL_COMPANY
+2024-08-14 13:10:47,732 - INFO - Shape after removing null values: (6737, 4)
+2024-08-14 13:10:47,956 - INFO - Loaded DataFrame from ./input_data/linkedin_bd_comp.csv. Initial shape: (54540, 4)
+2024-08-14 13:10:47,973 - INFO - Shape after removing null values: (54540, 4)
+2024-08-14 13:10:48,071 - INFO - Preprocessed URLs and extracted company names into 'crm_company' column
+2024-08-14 13:10:48,904 - INFO - Preprocessed URLs and extracted company names into 'bd_company' column
+2024-08-14 13:10:48,950 - INFO - Matched 2334 companies between the two DataFrames
+2024-08-14 13:10:49,032 - INFO - Saved matched results to ./match_tables/crm_bd_linkedin_comp_matched.csv
+2024-08-14 13:10:49,032 - INFO - Saved unmatched results to ./unmatch_tables/crm_bd_comp_unmatched.csv
+2024-08-14 13:10:49,037 - INFO - Completed CRM to Brightdata Linkedin Company URL Matching
+2024-08-14 13:10:49,037 - INFO - Starting CRM to Brightdata Linkedin People URL Matching
+2024-08-14 13:10:49,037 - INFO - Generating input for Brightdata LinkedIn company URL matching
+2024-08-14 13:10:50,011 - INFO - Generated input files for LinkedIn company URL matching
+2024-08-14 13:10:50,135 - INFO - Loaded DataFrame from ./input_data/VW_SF_CRM_MATCH.csv. Initial shape: (27052, 4)
+2024-08-14 13:10:50,135 - INFO - Renamed columns: {'ID': 'CRM_ID'}
+2024-08-14 13:10:50,137 - INFO - Shape after removing null values: (27052, 4)
+2024-08-14 13:10:50,404 - INFO - Loaded DataFrame from ./input_data/VW_BD_PEOPLE_MATCH.csv. Initial shape: (146817, 2)
+2024-08-14 13:10:50,404 - INFO - Renamed columns: {'LINKEDIN_URL_PERSON': 'LINKEDIN_URL_PERSON_BD'}
+2024-08-14 13:10:50,441 - INFO - Shape after removing null values: (146817, 2)
+2024-08-14 13:10:50,829 - INFO - Preprocessed URLs and extracted company names into 'crm_company' column
+2024-08-14 13:10:53,172 - INFO - Preprocessed URLs and extracted company names into 'bd_company' column
+2024-08-14 13:10:53,304 - INFO - Matched 6162 companies between the two DataFrames
+2024-08-14 13:10:53,477 - INFO - Saved matched results to ./match_tables/crm_bd_people_matched.csv
+2024-08-14 13:10:53,479 - INFO - Saved unmatched results to ./unmatch_tables/crm_bd_people_unmatched.csv
+2024-08-14 13:10:53,491 - INFO - Completed CRM to Brightdata Linkedin People URL Matching
+2024-08-14 13:10:53,491 - INFO - Processing matched output for operation: ./match_tables/crm_cb_matched.csv
+2024-08-14 13:10:53,595 - INFO - Read ./match_tables/crm_cb_matched.csv successfully. Shape: (27979, 6)
+2024-08-14 13:10:53,595 - INFO - Checking for duplicates in column: cb_company
+2024-08-14 13:10:53,605 - INFO - Found 3432 duplicate rows based on cb_company
+2024-08-14 13:10:53,605 - INFO - Remaining non-duplicate rows: 24547
+2024-08-14 13:10:53,646 - INFO - Saved duplicate rows to ./match_tables\crm_cb_duplicate_matched.csv
+2024-08-14 13:10:53,812 - INFO - Saved non-duplicate rows back to ./match_tables/crm_cb_matched.csv
+2024-08-14 13:10:53,812 - INFO - Processing matched output for operation: ./match_tables/crm_ss_matched.csv
+2024-08-14 13:10:53,905 - INFO - Read ./match_tables/crm_ss_matched.csv successfully. Shape: (26695, 6)
+2024-08-14 13:10:53,906 - INFO - Checking for duplicates in column: ss_company
+2024-08-14 13:10:53,906 - INFO - Found 1453 duplicate rows based on ss_company
+2024-08-14 13:10:53,906 - INFO - Remaining non-duplicate rows: 25242
+2024-08-14 13:10:53,939 - INFO - Saved duplicate rows to ./match_tables\crm_ss_duplicate_matched.csv
+2024-08-14 13:10:54,122 - INFO - Saved non-duplicate rows back to ./match_tables/crm_ss_matched.csv
+2024-08-14 13:10:54,122 - INFO - Processing matched output for operation: ./match_tables/cb_ss_matched.csv
+2024-08-14 13:11:00,192 - INFO - Read ./match_tables/cb_ss_matched.csv successfully. Shape: (2286022, 6)
+2024-08-14 13:11:00,205 - INFO - Checking for duplicates in column: ss_company
+2024-08-14 13:11:01,089 - INFO - Found 914656 duplicate rows based on ss_company
+2024-08-14 13:11:01,089 - INFO - Remaining non-duplicate rows: 1371366
+2024-08-14 13:11:06,639 - INFO - Saved duplicate rows to ./match_tables\cb_ss_duplicate_matched.csv
+2024-08-14 13:11:14,792 - INFO - Saved non-duplicate rows back to ./match_tables/cb_ss_matched.csv
+2024-08-14 13:11:15,057 - INFO - Processing matched output for operation: ./match_tables/crm_bd_comp_matched.csv
+2024-08-14 13:11:15,275 - INFO - Read ./match_tables/crm_bd_comp_matched.csv successfully. Shape: (18958, 6)
+2024-08-14 13:11:15,275 - INFO - Checking for duplicates in column: bd_company
+2024-08-14 13:11:15,275 - INFO - Found 657 duplicate rows based on bd_company
+2024-08-14 13:11:15,275 - INFO - Remaining non-duplicate rows: 18301
+2024-08-14 13:11:15,303 - INFO - Saved duplicate rows to ./match_tables\crm_bd_comp_duplicate_matched.csv
+2024-08-14 13:11:15,407 - INFO - Saved non-duplicate rows back to ./match_tables/crm_bd_comp_matched.csv
+2024-08-14 13:11:15,407 - INFO - Processing matched output for operation: ./match_tables/crm_bd_linkedin_comp_matched.csv
+2024-08-14 13:11:15,432 - INFO - Read ./match_tables/crm_bd_linkedin_comp_matched.csv successfully. Shape: (2334, 6)
+2024-08-14 13:11:15,433 - INFO - Checking for duplicates in column: bd_company
+2024-08-14 13:11:15,435 - INFO - Found 30 duplicate rows based on bd_company
+2024-08-14 13:11:15,436 - INFO - Remaining non-duplicate rows: 2304
+2024-08-14 13:11:15,458 - INFO - Saved duplicate rows to ./match_tables\crm_bd_linkedin_comp_duplicate_matched.csv
+2024-08-14 13:11:15,491 - INFO - Saved non-duplicate rows back to ./match_tables/crm_bd_linkedin_comp_matched.csv
+2024-08-14 13:11:15,491 - INFO - Processing matched output for operation: ./match_tables/crm_bd_people_matched.csv
+2024-08-14 13:11:15,525 - INFO - Read ./match_tables/crm_bd_people_matched.csv successfully. Shape: (6162, 6)
+2024-08-14 13:11:15,525 - INFO - Checking for duplicates in column: bd_company
+2024-08-14 13:11:15,525 - INFO - Found 1161 duplicate rows based on bd_company
+2024-08-14 13:11:15,537 - INFO - Remaining non-duplicate rows: 5001
+2024-08-14 13:11:15,558 - INFO - Saved duplicate rows to ./match_tables\crm_bd_people_duplicate_matched.csv
+2024-08-14 13:11:15,602 - INFO - Saved non-duplicate rows back to ./match_tables/crm_bd_people_matched.csv
+2024-08-14 13:11:15,603 - INFO - URL matching process completed successfully
+2024-08-14 15:16:44,362 - INFO - Starting CRM to Crunchbase Company URL Matching
+2024-08-14 15:16:44,452 - INFO - Loaded DataFrame from ./input_data/VW_SF_CRM_MATCH.csv. Initial shape: (27052, 4)
+2024-08-14 15:16:44,452 - INFO - Renamed columns: {'ID': 'CRM_ID'}
+2024-08-14 15:16:44,462 - WARNING - Dropped 8 rows with null values in CRM_ID or COMPANY_WEBSITE
+2024-08-14 15:16:44,473 - INFO - Shape after removing null values: (27044, 4)
+2024-08-14 15:16:49,755 - INFO - Loaded DataFrame from ./input_data/VW_CB_MATCH.csv. Initial shape: (3542011, 2)
+2024-08-14 15:16:50,290 - WARNING - Dropped 111941 rows with null values in UUID or HOMEPAGE_URL
+2024-08-14 15:16:50,290 - INFO - Shape after removing null values: (3430070, 2)
+2024-08-14 15:16:50,696 - INFO - Preprocessed URLs and extracted company names into 'crm_company' column
+2024-08-14 15:17:21,092 - INFO - Starting CRM to Crunchbase Company URL Matching
+2024-08-14 15:17:21,171 - INFO - Loaded DataFrame from ./input_data/VW_SF_CRM_MATCH.csv. Initial shape: (27052, 4)
+2024-08-14 15:17:21,171 - INFO - Renamed columns: {'ID': 'CRM_ID'}
+2024-08-14 15:17:21,171 - WARNING - Dropped 8 rows with null values in CRM_ID or COMPANY_WEBSITE
+2024-08-14 15:17:21,186 - INFO - Shape after removing null values: (27044, 4)
+2024-08-14 15:17:25,787 - INFO - Loaded DataFrame from ./input_data/VW_CB_MATCH.csv. Initial shape: (3542011, 2)
+2024-08-14 15:17:26,417 - WARNING - Dropped 111941 rows with null values in UUID or HOMEPAGE_URL
+2024-08-14 15:17:26,421 - INFO - Shape after removing null values: (3430070, 2)
+2024-08-14 15:17:26,691 - INFO - Preprocessed URLs and extracted company names into 'crm_company' column
+2024-08-14 15:18:01,941 - INFO - Preprocessed URLs and extracted company names into 'cb_company' column
+2024-08-14 15:18:06,007 - INFO - Matched 27979 companies between the two DataFrames
+2024-08-14 15:18:06,281 - INFO - Saved matched results to ./match_tables/crm_cb_matched.csv
+2024-08-14 15:18:06,281 - INFO - Saved unmatched results to ./unmatch_tables/crm_cb_unmatched.csv
+2024-08-14 15:18:06,508 - INFO - Completed CRM to Crunchbase Company URL Matching
+2024-08-14 15:18:06,508 - INFO - Starting CRM to Sourcescrub Company URL Matching
+2024-08-14 15:18:06,605 - INFO - Loaded DataFrame from ./input_data/VW_SF_CRM_MATCH.csv. Initial shape: (27052, 4)
+2024-08-14 15:18:06,605 - INFO - Renamed columns: {'ID': 'CRM_ID'}
+2024-08-14 15:18:06,605 - WARNING - Dropped 8 rows with null values in CRM_ID or COMPANY_WEBSITE
+2024-08-14 15:18:06,605 - INFO - Shape after removing null values: (27044, 4)
+2024-08-14 15:18:08,683 - INFO - Loaded DataFrame from ./input_data/VW_SS_COMPANY_MATCH.csv. Initial shape: (3165207, 2)
+2024-08-14 15:18:08,951 - WARNING - Dropped 33864 rows with null values in ID or WEBSITE
+2024-08-14 15:18:08,951 - INFO - Shape after removing null values: (3131343, 2)
+2024-08-14 15:18:09,190 - INFO - Preprocessed URLs and extracted company names into 'crm_company' column
+2024-08-14 15:18:39,054 - INFO - Preprocessed URLs and extracted company names into 'ss_company' column
+2024-08-14 15:18:41,371 - INFO - Matched 26695 companies between the two DataFrames
+2024-08-14 15:18:41,545 - INFO - Saved matched results to ./match_tables/crm_ss_matched.csv
+2024-08-14 15:18:41,545 - INFO - Saved unmatched results to ./unmatch_tables/crm_ss_unmatched.csv
+2024-08-14 15:18:41,656 - INFO - Completed CRM to Sourcescrub Company URL Matching
+2024-08-14 15:18:41,656 - INFO - Starting Crunchbase to Sourcescrub Company URL Matching
+2024-08-14 15:18:46,271 - INFO - Loaded DataFrame from ./input_data/VW_CB_MATCH.csv. Initial shape: (3542011, 2)
+2024-08-14 15:18:46,272 - INFO - Renamed columns: {'ID': 'CRM_ID'}
+2024-08-14 15:18:46,797 - WARNING - Dropped 111941 rows with null values in UUID or HOMEPAGE_URL
+2024-08-14 15:18:46,797 - INFO - Shape after removing null values: (3430070, 2)
+2024-08-14 15:18:49,192 - INFO - Loaded DataFrame from ./input_data/VW_SS_COMPANY_MATCH.csv. Initial shape: (3165207, 2)
+2024-08-14 15:18:49,617 - WARNING - Dropped 33864 rows with null values in ID or WEBSITE
+2024-08-14 15:18:49,617 - INFO - Shape after removing null values: (3131343, 2)
+2024-08-14 15:19:26,348 - INFO - Preprocessed URLs and extracted company names into 'cb_company' column
+2024-08-14 15:19:59,939 - INFO - Preprocessed URLs and extracted company names into 'ss_company' column
+2024-08-14 15:20:10,410 - INFO - Matched 2286022 companies between the two DataFrames
+2024-08-14 15:20:32,840 - INFO - Saved matched results to ./match_tables/cb_ss_matched.csv
+2024-08-14 15:20:32,840 - INFO - Saved unmatched results to ./unmatch_tables/cb_ss_unmatched.csv
+2024-08-14 15:20:33,603 - INFO - Completed Crunchbase to Sourcescrub Company URL Matching
+2024-08-14 15:20:33,604 - INFO - Starting CRM to Brightdata Company Website URL Matching
+2024-08-14 15:20:33,774 - INFO - Loaded DataFrame from ./input_data/VW_SF_CRM_MATCH.csv. Initial shape: (27052, 4)
+2024-08-14 15:20:33,776 - INFO - Renamed columns: {'ID': 'CRM_ID'}
+2024-08-14 15:20:33,786 - WARNING - Dropped 8 rows with null values in CRM_ID or COMPANY_WEBSITE
+2024-08-14 15:20:33,799 - INFO - Shape after removing null values: (27044, 4)
+2024-08-14 15:20:34,302 - INFO - Loaded DataFrame from ./input_data/VW_BD_COMPANY_MATCH.csv. Initial shape: (73483, 4)
+2024-08-14 15:20:34,303 - INFO - Renamed columns: {'COMPANY_WEBSITE': 'WEBSITE'}
+2024-08-14 15:20:34,322 - INFO - Shape after removing null values: (73483, 4)
+2024-08-14 15:20:34,677 - INFO - Preprocessed URLs and extracted company names into 'crm_company' column
+2024-08-14 15:20:35,448 - INFO - Preprocessed URLs and extracted company names into 'bd_company' column
+2024-08-14 15:20:35,640 - INFO - Matched 18958 companies between the two DataFrames
+2024-08-14 15:20:35,936 - INFO - Saved matched results to ./match_tables/crm_bd_comp_matched.csv
+2024-08-14 15:20:35,937 - INFO - Saved unmatched results to ./unmatch_tables/crm_bd_comp_unmatched.csv
+2024-08-14 15:20:35,942 - INFO - Completed CRM to Brightdata Company Website URL Matching
+2024-08-14 15:20:35,958 - INFO - Starting CRM to Brightdata Linkedin Company URL Matching
+2024-08-14 15:20:36,010 - INFO - Loaded DataFrame from ./input_data/linkedin_crm_comp.csv. Initial shape: (8550, 4)
+2024-08-14 15:20:36,010 - INFO - Renamed columns: {'ID': 'CRM_ID'}
+2024-08-14 15:20:36,016 - WARNING - Dropped 1813 rows with null values in CRM_ID or LINKEDIN_URL_COMPANY
+2024-08-14 15:20:36,018 - INFO - Shape after removing null values: (6737, 4)
+2024-08-14 15:20:36,276 - INFO - Loaded DataFrame from ./input_data/linkedin_bd_comp.csv. Initial shape: (54540, 4)
+2024-08-14 15:20:36,293 - INFO - Shape after removing null values: (54540, 4)
+2024-08-14 15:20:36,404 - INFO - Preprocessed URLs and extracted company names into 'crm_company' column
+2024-08-14 15:20:37,074 - INFO - Preprocessed URLs and extracted company names into 'bd_company' column
+2024-08-14 15:20:37,127 - INFO - Matched 2334 companies between the two DataFrames
+2024-08-14 15:20:37,195 - INFO - Saved matched results to ./match_tables/crm_bd_linkedin_comp_matched.csv
+2024-08-14 15:20:37,195 - INFO - Saved unmatched results to ./unmatch_tables/crm_bd_comp_unmatched.csv
+2024-08-14 15:20:37,203 - INFO - Completed CRM to Brightdata Linkedin Company URL Matching
+2024-08-14 15:20:37,204 - INFO - Starting CRM to Brightdata Linkedin People URL Matching
+2024-08-14 15:20:37,204 - INFO - Generating input for Brightdata LinkedIn company URL matching
+2024-08-14 15:20:37,931 - INFO - Generated input files for LinkedIn company URL matching
+2024-08-14 15:20:38,034 - INFO - Loaded DataFrame from ./input_data/VW_SF_CRM_MATCH.csv. Initial shape: (27052, 4)
+2024-08-14 15:20:38,035 - INFO - Renamed columns: {'ID': 'CRM_ID'}
+2024-08-14 15:20:38,042 - INFO - Shape after removing null values: (27052, 4)
+2024-08-14 15:20:38,262 - INFO - Loaded DataFrame from ./input_data/VW_BD_PEOPLE_MATCH.csv. Initial shape: (146817, 2)
+2024-08-14 15:20:38,262 - INFO - Renamed columns: {'LINKEDIN_URL_PERSON': 'LINKEDIN_URL_PERSON_BD'}
+2024-08-14 15:20:38,277 - INFO - Shape after removing null values: (146817, 2)
+2024-08-14 15:20:38,602 - INFO - Preprocessed URLs and extracted company names into 'crm_company' column
+2024-08-14 15:20:40,306 - INFO - Preprocessed URLs and extracted company names into 'bd_company' column
+2024-08-14 15:20:40,413 - INFO - Matched 6162 companies between the two DataFrames
+2024-08-14 15:20:40,572 - INFO - Saved matched results to ./match_tables/crm_bd_people_matched.csv
+2024-08-14 15:20:40,572 - INFO - Saved unmatched results to ./unmatch_tables/crm_bd_people_unmatched.csv
+2024-08-14 15:20:40,588 - INFO - Completed CRM to Brightdata Linkedin People URL Matching
+2024-08-14 15:20:40,589 - INFO - Processing matched output for operation: ./match_tables/crm_cb_matched.csv
+2024-08-14 15:20:40,656 - INFO - Read ./match_tables/crm_cb_matched.csv successfully. Shape: (27979, 6)
+2024-08-14 15:20:40,656 - INFO - Checking for duplicates in column: cb_company
+2024-08-14 15:20:40,691 - INFO - Found 3432 rows with duplicates based on cb_company
+2024-08-14 15:20:40,691 - INFO - Remaining non-duplicate rows: 24547
+2024-08-14 15:20:40,743 - INFO - Saved rows with duplicates (grouped together) to ./match_tables\crm_cb_duplicate_matched.csv
+2024-08-14 15:20:40,858 - INFO - Saved non-duplicate rows back to ./match_tables/crm_cb_matched.csv
+2024-08-14 15:20:40,873 - INFO - Processing matched output for operation: ./match_tables/crm_ss_matched.csv
+2024-08-14 15:20:40,940 - INFO - Read ./match_tables/crm_ss_matched.csv successfully. Shape: (26695, 6)
+2024-08-14 15:20:40,941 - INFO - Checking for duplicates in column: ss_company
+2024-08-14 15:20:40,943 - INFO - Found 1453 rows with duplicates based on ss_company
+2024-08-14 15:20:40,943 - INFO - Remaining non-duplicate rows: 25242
+2024-08-14 15:20:40,973 - INFO - Saved rows with duplicates (grouped together) to ./match_tables\crm_ss_duplicate_matched.csv
+2024-08-14 15:20:41,089 - INFO - Saved non-duplicate rows back to ./match_tables/crm_ss_matched.csv
+2024-08-14 15:20:41,089 - INFO - Processing matched output for operation: ./match_tables/cb_ss_matched.csv
+2024-08-14 15:20:46,324 - INFO - Read ./match_tables/cb_ss_matched.csv successfully. Shape: (2286022, 6)
+2024-08-14 15:20:46,324 - INFO - Checking for duplicates in column: ss_company
+2024-08-14 15:20:47,565 - INFO - Found 914656 rows with duplicates based on ss_company
+2024-08-14 15:20:47,566 - INFO - Remaining non-duplicate rows: 1371366
+2024-08-14 15:20:52,155 - INFO - Saved rows with duplicates (grouped together) to ./match_tables\cb_ss_duplicate_matched.csv
+2024-08-14 15:20:59,058 - INFO - Saved non-duplicate rows back to ./match_tables/cb_ss_matched.csv
+2024-08-14 15:20:59,377 - INFO - Processing matched output for operation: ./match_tables/crm_bd_comp_matched.csv
+2024-08-14 15:20:59,494 - INFO - Read ./match_tables/crm_bd_comp_matched.csv successfully. Shape: (18958, 6)
+2024-08-14 15:20:59,494 - INFO - Checking for duplicates in column: bd_company
+2024-08-14 15:20:59,503 - INFO - Found 657 rows with duplicates based on bd_company
+2024-08-14 15:20:59,508 - INFO - Remaining non-duplicate rows: 18301
+2024-08-14 15:20:59,525 - INFO - Saved rows with duplicates (grouped together) to ./match_tables\crm_bd_comp_duplicate_matched.csv
+2024-08-14 15:20:59,615 - INFO - Saved non-duplicate rows back to ./match_tables/crm_bd_comp_matched.csv
+2024-08-14 15:20:59,615 - INFO - Processing matched output for operation: ./match_tables/crm_bd_linkedin_comp_matched.csv
+2024-08-14 15:20:59,634 - INFO - Read ./match_tables/crm_bd_linkedin_comp_matched.csv successfully. Shape: (2334, 6)
+2024-08-14 15:20:59,634 - INFO - Checking for duplicates in column: bd_company
+2024-08-14 15:20:59,639 - INFO - Found 30 rows with duplicates based on bd_company
+2024-08-14 15:20:59,641 - INFO - Remaining non-duplicate rows: 2304
+2024-08-14 15:20:59,653 - INFO - Saved rows with duplicates (grouped together) to ./match_tables\crm_bd_linkedin_comp_duplicate_matched.csv
+2024-08-14 15:20:59,675 - INFO - Saved non-duplicate rows back to ./match_tables/crm_bd_linkedin_comp_matched.csv
+2024-08-14 15:20:59,675 - INFO - Processing matched output for operation: ./match_tables/crm_bd_people_matched.csv
+2024-08-14 15:20:59,703 - INFO - Read ./match_tables/crm_bd_people_matched.csv successfully. Shape: (6162, 6)
+2024-08-14 15:20:59,707 - INFO - Checking for duplicates in column: bd_company
+2024-08-14 15:20:59,708 - INFO - Found 1161 rows with duplicates based on bd_company
+2024-08-14 15:20:59,708 - INFO - Remaining non-duplicate rows: 5001
+2024-08-14 15:20:59,741 - INFO - Saved rows with duplicates (grouped together) to ./match_tables\crm_bd_people_duplicate_matched.csv
+2024-08-14 15:20:59,783 - INFO - Saved non-duplicate rows back to ./match_tables/crm_bd_people_matched.csv
+2024-08-14 15:20:59,783 - INFO - URL matching process completed successfully
+2024-08-19 14:34:04,966 - INFO - Generated input files for LinkedIn company URL matching
+2024-08-19 14:34:04,985 - ERROR - Error in load_clean_and_rename_dataframe: The file dummy.csv does not exist.
+2024-08-19 14:34:04,993 - ERROR - Error in load_clean_and_rename_dataframe: The file dummy.csv does not exist.
+2024-08-19 14:34:05,000 - ERROR - Error in load_clean_and_rename_dataframe: The file dummy.csv does not exist.
+2024-08-19 14:34:05,005 - INFO - Starting CRM to Crunchbase Company URL Matching
+2024-08-19 14:34:05,007 - INFO - Completed CRM to Crunchbase Company URL Matching
+2024-08-19 14:34:05,009 - INFO - Starting CRM to Sourcescrub Company URL Matching
+2024-08-19 14:34:05,009 - INFO - Completed CRM to Sourcescrub Company URL Matching
+2024-08-19 14:34:05,009 - INFO - Starting Crunchbase to Sourcescrub Company URL Matching
+2024-08-19 14:34:05,009 - INFO - Completed Crunchbase to Sourcescrub Company URL Matching
+2024-08-19 14:34:05,009 - INFO - Starting CRM to Brightdata Company Website URL Matching
+2024-08-19 14:34:05,009 - INFO - Completed CRM to Brightdata Company Website URL Matching
+2024-08-19 14:34:05,014 - INFO - Starting CRM to Brightdata Linkedin Company URL Matching
+2024-08-19 14:34:05,015 - INFO - Completed CRM to Brightdata Linkedin Company URL Matching
+2024-08-19 14:34:05,016 - INFO - Starting CRM to Brightdata Linkedin People URL Matching
+2024-08-19 14:34:05,016 - INFO - Generating input for Brightdata LinkedIn company URL matching
+2024-08-19 14:34:06,214 - INFO - Generated input files for LinkedIn company URL matching
+2024-08-19 14:34:06,229 - INFO - Completed CRM to Brightdata Linkedin People URL Matching
+2024-08-19 14:34:06,229 - INFO - URL matching process completed successfully
+2024-08-19 14:34:06,292 - INFO - Matched 1 companies between the two DataFrames
+2024-08-19 14:34:06,295 - ERROR - Error in match_companies: One or both input DataFrames are None or empty.
+2024-08-19 14:34:06,308 - INFO - Preprocessed URLs and extracted company names into 'company' column
+2024-08-19 14:34:06,310 - ERROR - Error in preprocess_urls: Input DataFrame is None or empty.
+2024-08-19 14:34:06,347 - INFO - Read ./match_tables/dummy_matched.csv successfully. Shape: (4, 4)
+2024-08-19 14:34:06,349 - INFO - Checking for duplicates in column: URL2
+2024-08-19 14:34:06,354 - INFO - Found 2 rows with duplicates based on URL2
+2024-08-19 14:34:06,355 - INFO - Remaining non-duplicate rows: 2
+2024-08-19 14:34:06,358 - INFO - Saved rows with duplicates (grouped together) to ./match_tables\dummy_duplicate_matched.csv
+2024-08-19 14:34:06,358 - INFO - Saved non-duplicate rows back to ./match_tables/dummy_matched.csv
+2024-08-19 14:34:56,277 - ERROR - Error in load_clean_and_rename_dataframe: The file dummy_path.csv does not exist.
+2024-08-19 14:34:56,320 - INFO - Matched 2 companies between the two DataFrames
+2024-08-19 14:34:56,380 - INFO - Preprocessed URLs and extracted company names into 'crm_company' column
+2024-08-19 14:34:56,387 - ERROR - Error in preprocess_urls: Input DataFrame is None or empty.
+2024-08-19 14:34:56,389 - ERROR - Error in preprocess_urls: Input DataFrame is None or empty.
+2024-08-19 14:34:56,392 - INFO - Saved matched results to matched.csv
+2024-08-19 14:34:56,394 - INFO - Saved unmatched results to unmatched.csv
+2024-08-19 14:34:56,397 - ERROR - Error in save_results: Both matched and unmatched DataFrames are empty
+2024-08-19 14:34:56,406 - INFO - Generated input files for LinkedIn company URL matching
+2024-08-19 14:34:56,408 - ERROR - Error in get_bd_linkedin_company_urls: One or more input DataFrames are empty
+2024-08-19 14:34:56,415 - INFO - Processing matched output for operation: ./match_tables/crm_cb_matched.csv
+2024-08-19 14:34:56,422 - INFO - Processing matched output for operation: ./match_tables/crm_cb_matched.csv
+2024-08-19 14:34:56,424 - ERROR - Failed to process operation: ./match_tables/crm_cb_matched.csv. Error: Processing error
+2024-08-19 14:53:05,026 - INFO - Generated input files for LinkedIn company URL matching
+2024-08-19 14:53:05,041 - ERROR - Error in load_clean_and_rename_dataframe: The file dummy.csv does not exist.
+2024-08-19 14:53:05,052 - ERROR - Error in load_clean_and_rename_dataframe: The file dummy.csv does not exist.
+2024-08-19 14:53:05,058 - ERROR - Error in load_clean_and_rename_dataframe: The file dummy.csv does not exist.
+2024-08-19 14:53:05,058 - INFO - Starting CRM to Crunchbase Company URL Matching
+2024-08-19 14:53:05,068 - INFO - Completed CRM to Crunchbase Company URL Matching
+2024-08-19 14:53:05,069 - INFO - Starting CRM to Sourcescrub Company URL Matching
+2024-08-19 14:53:05,069 - INFO - Completed CRM to Sourcescrub Company URL Matching
+2024-08-19 14:53:05,070 - INFO - Starting Crunchbase to Sourcescrub Company URL Matching
+2024-08-19 14:53:05,071 - INFO - Completed Crunchbase to Sourcescrub Company URL Matching
+2024-08-19 14:53:05,071 - INFO - Starting CRM to Brightdata Company Website URL Matching
+2024-08-19 14:53:05,072 - INFO - Completed CRM to Brightdata Company Website URL Matching
+2024-08-19 14:53:05,073 - INFO - Starting CRM to Brightdata Linkedin Company URL Matching
+2024-08-19 14:53:05,073 - INFO - Completed CRM to Brightdata Linkedin Company URL Matching
+2024-08-19 14:53:05,074 - INFO - Starting CRM to Brightdata Linkedin People URL Matching
+2024-08-19 14:53:05,074 - INFO - Generating input for Brightdata LinkedIn company URL matching
+2024-08-19 14:53:06,074 - INFO - Generated input files for LinkedIn company URL matching
+2024-08-19 14:53:06,090 - INFO - Completed CRM to Brightdata Linkedin People URL Matching
+2024-08-19 14:53:06,090 - INFO - URL matching process completed successfully
+2024-08-19 14:53:06,151 - INFO - Matched 1 companies between the two DataFrames
+2024-08-19 14:53:06,151 - ERROR - Error in match_companies: One or both input DataFrames are None or empty.
+2024-08-19 14:53:06,151 - INFO - Preprocessed URLs and extracted company names into 'company' column
+2024-08-19 14:53:06,167 - ERROR - Error in preprocess_urls: Input DataFrame is None or empty.
+2024-08-19 14:53:06,200 - INFO - Read ./match_tables/dummy_matched.csv successfully. Shape: (4, 4)
+2024-08-19 14:53:06,200 - INFO - Checking for duplicates in column: URL2
+2024-08-19 14:53:06,203 - INFO - Found 2 rows with duplicates based on URL2
+2024-08-19 14:53:06,203 - INFO - Remaining non-duplicate rows: 2
+2024-08-19 14:53:06,204 - INFO - Saved rows with duplicates (grouped together) to ./match_tables\dummy_duplicate_matched.csv
+2024-08-19 14:53:06,204 - INFO - Saved non-duplicate rows back to ./match_tables/dummy_matched.csv
+2024-08-19 14:58:23,110 - ERROR - Error in load_clean_and_rename_dataframe: The file dummy.csv does not exist.
+2024-08-19 14:58:23,131 - ERROR - Error in preprocess_urls: Input DataFrame is None or empty.
+2024-08-19 14:58:23,136 - ERROR - Error in load_clean_and_rename_dataframe: stat: path should be string, bytes, os.PathLike or integer, not DataFrame
+2024-08-19 14:58:23,136 - ERROR - Error in load_clean_and_rename_dataframe: stat: path should be string, bytes, os.PathLike or integer, not DataFrame
+2024-08-19 14:58:23,137 - ERROR - Error in preprocess_urls: Input DataFrame is None or empty.
+2024-08-19 14:58:23,139 - ERROR - Error in match_companies: One or both input DataFrames are None or empty.
+2024-08-19 14:58:23,140 - INFO - Processing matched output for operation: dummy_matched.csv
+2024-08-19 14:58:23,140 - ERROR - An error occurred while processing dummy_matched.csv: [Errno 2] No such file or directory: 'dummy_matched.csv'
+2024-08-19 14:58:23,140 - ERROR - Failed to process operation: dummy_matched.csv. Error: [Errno 2] No such file or directory: 'dummy_matched.csv'
+2024-08-19 14:58:24,347 - INFO - Generated input files for LinkedIn company URL matching
+2024-08-19 14:58:24,416 - INFO - Matched 2 companies between the two DataFrames
+2024-08-19 14:58:24,446 - INFO - Processing matched output for operation: dummy_matched.csv
+2024-08-19 14:58:24,452 - INFO - Read dummy_matched.csv successfully. Shape: (0, 3)
+2024-08-19 14:58:24,452 - INFO - Checking for duplicates in column: company
+2024-08-19 14:58:24,452 - INFO - Found 0 rows with duplicates based on company
+2024-08-19 14:58:24,452 - INFO - Remaining non-duplicate rows: 0
+2024-08-19 14:58:24,471 - INFO - Saved rows with duplicates (grouped together) to dummy_duplicate_matched.csv
+2024-08-19 14:58:24,483 - INFO - Saved non-duplicate rows back to dummy_matched.csv
+2024-08-19 17:49:11,726 - ERROR - Error in load_clean_and_rename_dataframe: The file dummy.csv does not exist.
+2024-08-19 17:49:42,553 - ERROR - Error in load_clean_and_rename_dataframe: The file dummy.csv does not exist.
+2024-08-19 17:49:42,563 - ERROR - Error in preprocess_urls: Input DataFrame is None or empty.
+2024-08-19 17:49:42,573 - ERROR - Error in load_clean_and_rename_dataframe: stat: path should be string, bytes, os.PathLike or integer, not DataFrame
+2024-08-19 17:49:42,578 - ERROR - Error in load_clean_and_rename_dataframe: stat: path should be string, bytes, os.PathLike or integer, not DataFrame
+2024-08-19 17:49:42,579 - ERROR - Error in preprocess_urls: Input DataFrame is None or empty.
+2024-08-19 17:49:42,579 - ERROR - Error in match_companies: One or both input DataFrames are None or empty.
+2024-08-19 17:49:42,579 - INFO - Processing matched output for operation: dummy_matched.csv
+2024-08-19 17:49:42,587 - ERROR - An error occurred while processing dummy_matched.csv: [Errno 2] No such file or directory: 'dummy_matched.csv'
+2024-08-19 17:49:42,587 - ERROR - Failed to process operation: dummy_matched.csv. Error: [Errno 2] No such file or directory: 'dummy_matched.csv'
+2024-08-19 17:49:57,618 - INFO - Generated input files for LinkedIn company URL matching
+2024-08-19 17:49:57,701 - INFO - Matched 2 companies between the two DataFrames
+2024-08-19 17:49:57,736 - INFO - Processing matched output for operation: dummy_matched.csv
+2024-08-19 17:49:57,752 - INFO - Read dummy_matched.csv successfully. Shape: (0, 3)
+2024-08-19 17:49:57,752 - INFO - Checking for duplicates in column: company
+2024-08-19 17:49:57,752 - INFO - Found 0 rows with duplicates based on company
+2024-08-19 17:49:57,752 - INFO - Remaining non-duplicate rows: 0
+2024-08-19 17:49:57,776 - INFO - Saved rows with duplicates (grouped together) to dummy_duplicate_matched.csv
+2024-08-19 17:49:57,792 - INFO - Saved non-duplicate rows back to dummy_matched.csv
